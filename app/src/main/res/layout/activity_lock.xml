@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCKED"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp"
+        android:letterSpacing="0.28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Masukkan PIN"
+        android:textColor="@color/text_primary"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gunakan PIN untuk membuka layar ini"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/pinInput"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_pin_input"
+        android:hint="••••"
+        android:inputType="numberPassword"
+        android:letterSpacing="0.35"
+        android:maxLength="4"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_muted"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="20dp"
+        android:text=""
+        android:textColor="@color/error"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/unlockButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/accent"
+        android:text="Buka"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Tidak ada suara • Restart = nonaktif"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp" />
+</LinearLayout>
